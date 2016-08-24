@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Backbone+RequireJs</title>
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="src/assets/css/reset.css">
+	<link rel="stylesheet" href="libs/css/animate.min.css">
+	<link rel="stylesheet" href="src/assets/css/common.css">
+</head>
+<body>
+	<script type="text/template" id="homeTemp">
+		<div class="home">
+			<ul class="effect">
+				<%_.each(effect, function(items,key){%>
+					<li>
+						<h2><%= key %></h2>
+						<ul class="effect-list">
+							<%_.each(items, function(item,index){%>
+								<li><%= item %></li>
+							<%})%>
+						</ul>
+					</li>
+				<%})%>
+			</ul>
+		</div>
+	</script>
+
+	<script data-main="src/index" src="libs/js/require-2.1.11.min.js"></script>
+</body>
+</html>

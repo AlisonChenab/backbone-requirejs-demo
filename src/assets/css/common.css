@@ -1,0 +1,41 @@
+.home{
+	padding: 5%;
+}
+
+.effect>li{
+	overflow: hidden;
+}
+
+.effect>li h2,
+.effect-list>li{
+	float: left;
+	height: 40px;
+	line-height: 40px;
+}
+
+.effect>li h2{
+	width: 14%;
+	text-align: right;
+}
+
+.effect>li ul{
+	float: left;
+	width: 86%;
+}
+
+.effect-list>li{
+	padding:0 12px;
+	margin: 0 0 12px 12px;
+	border: 1px solid #333;
+	border-radius: 4px;
+	text-align: center;
+	cursor: pointer;
+	transition: all .15s;
+}
+
+.effect-list>li:hover{
+	background: #333;
+	color: #fff;
+	border-radius: 12px 0px;
+	transform: scale(1.1);
+}
